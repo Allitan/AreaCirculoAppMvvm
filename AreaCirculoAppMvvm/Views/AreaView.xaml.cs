@@ -1,9 +1,15 @@
+
+using AreaCirculoAppMvvm.ViewModels;
+
 namespace AreaCirculoAppMvvm.Views;
 
 public partial class AreaView : ContentPage
 {
-	public AreaView()
+    AreaViewModel viewModel;
+    public AreaView()
 	{
 		InitializeComponent();
-	}
+        viewModel = new AreaViewModel();
+        this.BindingContext = viewModel;
+    }
 }

@@ -1,4 +1,6 @@
-﻿namespace AreaCirculoAppMvvm
+﻿using AreaCirculoAppMvvm.Views;
+
+namespace AreaCirculoAppMvvm
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new AreaView();
         }
     }
 }
